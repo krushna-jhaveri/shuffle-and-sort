@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-top-style: solid;
+    border-top-color: #BFBFBF;
+    border-top-width: 5px;
+}
+
+.grid-container {
+    float: left;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+}
+
+.grid-item {
+    font-size: 90px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+}
+
+.footer {
+    width: 100%;
+    height: 20%;
+    font-style: italic;
+    display: inline-grid;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.color-one {
+    background-color: #6F98A8;
+}
+
+.color-two {
+    background-color: #2B8EAD;
+}
+
+.color-three {
+    background-color: #2f454e;
+}
+
+.color-four {
+    background-color: #BFBFBF;
+}
+
+.button-section {
+    display: grid;
+    float: right;
+    width: 20%;
+    height: 80%;
+    justify-items: center;
+}
+
+    .button-section .button-section-one {
+        height: 20%;
+    }
+
+    .button-section .ss-button {
+        display:block;
+        background-color: #72c3dc;
+        height: 40px;
+        width:120px;
+        color: #FFFFFF;
+        font-weight: bold;
+        border-color: #72c3dc;
+        border-radius: 6px;
+        margin-top: 20px;
+    }
+
+        .button-section .ss-button:hover {
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+        }
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    background-color: none;
+    height: 40px;
+    padding: 6px;
+}
+
+.body-section {
+    margin: 0px;
+    height: 100%;
+    border: none;
+    background-color: #EFEFEF;
+    font-family: Tahoma;
+}
+
+@media screen and (max-width: 375px) {
+    .main-container {
+        width: 100%;
+        height: 90%;
+        position: unset;
+        border: none;
+    }
+
+    .color-one {
+        background-color: #333333;
+    }
+
+    .color-two {
+        background-color: #333333;
+    }
+
+    .color-three {
+        background-color: #333333;
+    }
+
+    .color-four {
+        background-color: #333333;
+    }
+
+    .body-section {
+        background-color: #FFFFFF;
+        border-style: solid;
+        border-color: #000000;
+        border-width: 10px;
+        border-radius: 8px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .title {
+        height: 40px;
+        padding: 6px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #FFFFFF;
+        background-color: #333333;
+    }
+
+    .grid-container {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        display: block;
+        background-color: #FFFFFF;
+    }
+
+    .grid-item {
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 10px;
+        background-color: #EFEFEF;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #000000;
+    }
+
+    .button-section {
+        float: none;
+        height: 40px;
+        display: flex;
+        width: unset;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+        .button-section .ss-button {
+            margin-right: 10px;
+            display: unset;
+        }
+
+        .button-section .button-section-one {
+            height: unset;
+        }
+
+    .color-one:before {
+        content: "";
+        width: 8px;
+        height: 35px;
+        position: absolute;
+        left: 8px;
+        background-color: #6F98A8;
+    }
+
+    .color-two:before {
+        content: "";
+        width: 8px;
+        height: 35px;
+        position: absolute;
+        left: 8px;
+        background-color: #2B8EAD;
+    }
+
+    .color-three:before {
+        content: "";
+        width: 8px;
+        height: 35px;
+        position: absolute;
+        left: 8px;
+        background-color: #2f454e;
+    }
+
+    .color-four:before {
+        content: "";
+        width: 8px;
+        height: 35px;
+        position: absolute;
+        left: 8px;
+        background-color: #BFBFBF;
+    }
+}
